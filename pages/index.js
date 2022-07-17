@@ -13,7 +13,7 @@ export default function Home() {
   const address = useAddress();
   const connectWithMetamask = useMetamask();
   const disconnectWallet = useDisconnect();
-  const tokenDrop = useTokenDrop("0xF938253A5D6773Ac9C3Dcd794dD9C45AE7F39d56");
+  const tokenDrop = useTokenDrop("0x415B9B70944376acCB98e1a58E1432Bc9ABCC71F");
 
   const modalStyles = {
     content: {
@@ -87,6 +87,12 @@ export default function Home() {
               onStateChange={(e) => checkElapsedTime(e)}
               opts={opts}
             />
+            <footer>
+              <p>Author: Raza Rython</p>
+              <p>
+                <a href="https://twitter.com/razacodes">@razacodes</a>
+              </p>
+            </footer>
           </div>
 
           <Modal
@@ -94,6 +100,7 @@ export default function Home() {
             onRequestClose={() => setModalIsOpen(false)}
             contentLabel="Exercise Completed"
             style={modalStyles}
+            className={styles.modal}
           >
             <div>
               <h3>Congratulations</h3>

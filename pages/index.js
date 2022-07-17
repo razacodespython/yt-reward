@@ -79,6 +79,7 @@ export default function Home() {
             /> */}
           <div className={styles.main}>
             <h1>Watch, learn and earn a reward </h1>
+            <h3>Once the video is done, you can claim a reward</h3>
             <YouTube
               //videoId={videoCode}
               videoId="OtusKafC9FM"

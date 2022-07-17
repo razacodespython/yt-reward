@@ -97,7 +97,9 @@ export default function Home() {
           >
             <div>
               <h3>Congratulations</h3>
-              <button onClick={mintToken}>Claim your reward here</button>
+              <button className={styles.btn} onClick={mintToken}>
+                Claim your reward here
+              </button>
             </div>
           </Modal>
         </div>
